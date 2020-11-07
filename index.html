@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+        integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <link rel="stylesheet" href="src/style.css">
+    <title>Weather App</title>
+</head>
+<body>
+    <div class="container">
+        <div class="weather-app-wrapper">
+            <div class="weather-app">
+                <form id="search-form">
+                    <div class="row">
+                        <div class="col-9">
+                            <input type="search" placeholder="Type city here.." class="form-control">
+                        </div>
+                        <div class="col-3">
+                            <input type="submit" value="Search" class="btn btn-light">
+                        </div>
+                    </div>
+                </form>
+                <div class="location-and-date">
+                    <h1>Scunthorpe</h1>
+                    <span>Saturday 14:00</span>
+                    <p>
+                </div>
+
+                
+                <div class="current-weather">
+                    <div class="current-weather-icon-container">
+                        <img src="media/Sun.png" class="current-weather-icon" alt="">
+                    </div>
+                    <div class="current-weather-content-container">
+                        <div class="current-temperature">21<span class="units">°C | °F</span> </div>
+                        <div class="current-weather-description">Mostly Sunny</div>
+                    </div>
+                </div>
+                <hr>
+
+                <div class="current-weather-stats">
+                    <div class="precipitation">
+                        <div class="label">
+                            Precipitation
+                        </div>
+                        <div class="image">
+                            <img src="media/drop.png" alt="">
+                        </div>
+                        <div class="value">
+                            2%
+                        </div>
+                    </div>
+                    <div class="humidity">
+                        <div class="label">
+                            Humidity
+                        </div>
+                        <div class="image">
+                            <img src="media/humidity.png" alt="">
+                        </div>
+                        <div class="value">
+                            96%
+                        </div>
+                    </div>
+                    <div class="wind">
+                        <div class="label">
+                            Wind
+                        </div>
+                        <div class="image">
+                            <img src="media/wind.png" alt="">
+                        </div>
+                        <div class="value">
+                            2mph
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <footer>
+                <small>
+                    <a href="#">Open-source code</a> by Amy Creasy
+                </small>  
+            </footer>
+        </div>
+    </div>
+    <script src="src/index.js"></script>
+</body>
+</html>

@@ -1,0 +1,143 @@
+body {
+  font-family: arial, sans-serif;
+  color: #fff;
+}
+
+h1 {
+  font-size: 36px;
+  font-weight: 100;
+  line-height: 28px;
+}
+
+hr {
+  border: 0;
+  height: 2px;
+  background-image: linear-gradient(
+    to right,
+    rgba(255, 255, 255, 0),
+    rgba(255, 255, 255, 0.75),
+    rgba(255, 255, 255, 0)
+  );
+}
+footer {
+  color: black;
+}
+.weather-app-wrapper {
+  max-width: 800px;
+  margin: 20px auto;
+}
+.weather-app {
+  display: flex;
+  flex-wrap: wrap;
+  border: 1px solid #dfe1e5;
+  border-radius: 10px;
+  margin: 20px auto;
+  padding: 20px;
+  background-image: linear-gradient(
+    to left top,
+    #051937,
+    #044268,
+    #007199,
+    #00a3c6,
+    #12d8eb
+  );
+}
+@media screen and (min-width: 1140px) {
+  .weather-app {
+    max-width: 800px;
+    font-size: 1.1em;
+  }
+}
+.location-and-date {
+  width: 100%;
+}
+
+/* current-temperature */
+.current-weather {
+  display: flex;
+  width: 100%;
+}
+
+.current-weather-icon-container {
+  flex-grow: 1.25;
+  text-align: center;
+}
+
+.current-weather-content-container {
+  flex-grow: 1;
+}
+
+.current-weather-icon {
+  width: 120px;
+  height: 120px;
+  margin-right: 20px;
+}
+
+.current-temperature {
+  font-weight: 300;
+  font-size: 64px;
+}
+
+.current-temperature .units {
+  position: relative;
+  font-size: 18px;
+  top: -32px;
+}
+
+.current-weather-description {
+  margin-top: -0.5em;
+  margin-left: -0.6em;
+  font-size: 1.125em;
+}
+
+/*Current Weather Stats*/
+
+.current-weather-stats {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  text-align: center;
+  border-top: 1px solid rgba(255, 255, 255, 0.5);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+  margin: 20px 0;
+}
+@media screen and (min-width: 700px) {
+  .current-weather-stats {
+    border-left: 1px solid rgba(255, 255, 255, 0.5);
+    padding-left: 20px;
+    border-top: none;
+    border-bottom: none;
+  }
+}
+
+@media screen and (min-width: 700px) {
+  .current-weather,
+  .current-weather-stats {
+    width: 50%;
+  }
+}
+
+.current-weather-stats .label {
+  margin-top: 10px;
+}
+.current-weather-stats img {
+  padding: 20px 0;
+}
+.current-weather-stats .value {
+  margin-bottom: 10px;
+}
+
+#search-form {
+  width: 100%;
+  margin-bottom: 20px;
+}
+.location-and-date span {
+  font-size: 1.3rem;
+}
+
+.current-temperature img {
+  float: left;
+  height: 150px;
+  width: 150px;
+  margin-left: 20px;
+}
