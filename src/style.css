@@ -1,6 +1,7 @@
 body {
   font-family: arial, sans-serif;
   color: #fff;
+  font-size: 18px;
 }
 
 h1 {
@@ -31,7 +32,7 @@ footer {
   flex-wrap: wrap;
   border: 1px solid #dfe1e5;
   border-radius: 10px;
-  margin: 20px auto;
+  margin: 0 auto;
   padding: 20px;
   background-image: linear-gradient(
     to left top,
@@ -52,7 +53,8 @@ footer {
   width: 100%;
 }
 
-/* current-temperature */
+/* Current Weather Section */
+
 .current-weather {
   display: flex;
   width: 100%;
@@ -85,9 +87,8 @@ footer {
 }
 
 .current-weather-description {
-  margin-top: -0.5em;
-  margin-left: -0.6em;
-  font-size: 1.125em;
+  position: relative;
+  top: -15px;
 }
 
 /*Current Weather Stats*/
@@ -120,9 +121,10 @@ footer {
 .current-weather-stats .label {
   margin-top: 10px;
 }
-.current-weather-stats img {
+.current-weather-stats .image {
   padding: 20px 0;
 }
+
 .current-weather-stats .value {
   margin-bottom: 10px;
 }
@@ -140,4 +142,8 @@ footer {
   height: 150px;
   width: 150px;
   margin-left: 20px;
+}
+
+.submit-button {
+  padding: 0;
 }
