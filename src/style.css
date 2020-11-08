@@ -10,22 +10,12 @@ h1 {
   line-height: 28px;
 }
 
-hr {
-  border: 0;
-  height: 2px;
-  background-image: linear-gradient(
-    to right,
-    rgba(255, 255, 255, 0),
-    rgba(255, 255, 255, 0.75),
-    rgba(255, 255, 255, 0)
-  );
-}
 footer {
   color: black;
 }
 .weather-app-wrapper {
   max-width: 800px;
-  margin: 20px auto;
+  margin: 8px auto;
 }
 .weather-app {
   display: flex;
@@ -70,19 +60,18 @@ footer {
 }
 
 .current-weather-icon {
-  width: 120px;
-  height: 120px;
   margin-right: 20px;
+  width: 150px;
 }
 
 .current-temperature {
   font-weight: 300;
-  font-size: 64px;
+  font-size: 56px;
 }
 
 .current-temperature .units {
   position: relative;
-  font-size: 18px;
+  font-size: 16px;
   top: -32px;
 }
 
@@ -135,13 +124,6 @@ footer {
 }
 .location-and-date span {
   font-size: 1.3rem;
-}
-
-.current-temperature img {
-  float: left;
-  height: 150px;
-  width: 150px;
-  margin-left: 20px;
 }
 
 .submit-button {
