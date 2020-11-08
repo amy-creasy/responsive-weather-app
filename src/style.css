@@ -59,7 +59,7 @@ footer {
   flex-grow: 1;
 }
 
-.current-weather-icon {
+#current-weather-icon {
   margin-right: 20px;
   width: 150px;
 }

@@ -20,6 +20,8 @@ currentDate.innerHTML = `${currentDay} ${currentHour}:${currentMinutes}`;
 
 //Current Weather//
 
+
+
 function displayCurrentWeather (response) {
 console.log(response.data);
 document.querySelector("h1").innerHTML = response.data.name;
@@ -28,6 +30,10 @@ document.querySelector(".current-weather-description").innerHTML = response.data
 document.querySelector("#cloudiness-value").innerHTML = `${response.data.clouds.all}%`;
 document.querySelector("#humidity-value").innerHTML = `${response.data.main.humidity}%`;
 document.querySelector("#wind-value").innerHTML = `${Math.round(response.data.wind.speed)}mph`;
+
+let iconElement = document.querySelector("#current-weather-icon")
+let icon = response.data.weather[0].icon
+iconElement.setAttribute ("src", `media/${icon}.png`)
 }
 
 
