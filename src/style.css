@@ -75,6 +75,15 @@ footer {
   top: -32px;
 }
 
+.current-temperature .active {
+  color: #fff;
+  cursor: default;
+}
+
+.current-temperature .active:hover {
+  text-decoration: none;
+}
+
 .current-weather-description {
   position: relative;
   top: -15px;
