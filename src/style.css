@@ -78,6 +78,7 @@ footer {
 .current-weather-description {
   position: relative;
   top: -15px;
+  text-transform: capitalize;
 }
 
 /*Current Weather Stats*/
