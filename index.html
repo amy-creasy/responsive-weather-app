@@ -13,10 +13,11 @@
     <div class="container">
         <div class="weather-app-wrapper">
             <div class="weather-app">
+
                 <form id="search-form">
                     <div class="row">
                         <div class="col-9">
-                            <input type="search" placeholder="Type city here.." class="form-control">
+                            <input type="search" placeholder="Type city here.." class="form-control" id="city-input">
                         </div>
                         <div class="col-3 submit-button">
                             <input type="submit" value="Search" class="btn btn-light">
@@ -25,8 +26,8 @@
                 </form>
 
                 <div class="location-and-date">
-                    <h1>Scunthorpe</h1>
-                    <span id="current-date">Saturday 14:00</span>
+                    <h1></h1>
+                    <span id="current-date"></span>
                     <p>
                 </div>
 
@@ -36,33 +37,21 @@
                         <img src="media/Sun.png" class="current-weather-icon" alt="">
                     </div>
                     <div class="current-weather-content-container">
-                        <div class="current-temperature"><span id="temperature-value">21</span><span class="units">°C | °F</span> </div>
-                        <div class="current-weather-description">Mostly Sunny</div>
+                        <div class="current-temperature"><span id="temperature-value"></span><span class="units">°C | °F</span> </div>
+                        <div class="current-weather-description"></div>
                     </div>
                 </div>
 
 
                 <div class="current-weather-stats">
-                    <div class="sunrise">
+                    <div class="Cloudiness">
                         <div class="label">
-                            Sunrise
+                            Clouds
                         </div>
                         <div class="image">
-                            <img src="media/sunrise icon.png" alt="">
+                            <img src="media/cloud icon.png" alt="">
                         </div>
-                        <div class="value" id="sunrise-value">
-                            08:30
-                        </div>
-                    </div>
-                    <div class="sunset">
-                        <div class="label">
-                            Sunset
-                        </div>
-                        <div class="image">
-                            <img src="media/sunset icon.png" alt="">
-                        </div>
-                        <div class="value" id="sunset-value">
-                            17:45
+                        <div class="value" id="cloudiness-value">
                         </div>
                     </div>
                     <div class="humidity">
@@ -73,7 +62,6 @@
                             <img src="media/humidity icon.png" alt="">
                         </div>
                         <div class="value" id="humidity-value">
-                            96%
                         </div>
                     </div>
                     <div class="wind">
@@ -84,7 +72,6 @@
                             <img src="media/wind icon.png" alt="">
                         </div>
                         <div class="value" id="wind-value">
-                            2mph
                         </div>
                     </div>
                 </div>
