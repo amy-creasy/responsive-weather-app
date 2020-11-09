@@ -24,13 +24,11 @@ footer {
   border-radius: 10px;
   margin: 0 auto;
   padding: 20px;
-  background-image: linear-gradient(
-    to left top,
-    #051937,
-    #044268,
-    #007199,
-    #00a3c6,
-    #12d8eb
+  background: rgb(9, 9, 121);
+  background: linear-gradient(
+    0deg,
+    rgba(9, 9, 121, 1) 0%,
+    rgba(0, 255, 247, 1) 100%
   );
 }
 @media screen and (min-width: 1140px) {
@@ -41,6 +39,7 @@ footer {
 }
 .location-and-date {
   width: 100%;
+  font-size: 14px;
 }
 
 /* Current Weather Section */
@@ -60,7 +59,7 @@ footer {
 }
 
 #current-weather-icon {
-  margin-right: 20px;
+  margin-right: 15px;
   width: 150px;
 }
 
@@ -71,7 +70,7 @@ footer {
 
 .current-temperature .units {
   position: relative;
-  font-size: 16px;
+  font-size: 20px;
   top: -32px;
 }
 
@@ -80,13 +79,17 @@ footer {
   cursor: default;
 }
 
+.current-temperature .inactive {
+  color: #0645ad;
+  text-decoration: underline;
+}
+
 .current-temperature .active:hover {
   text-decoration: none;
 }
 
 .current-weather-description {
   position: relative;
-  top: -15px;
   margin-left: 10px;
   text-transform: capitalize;
 }
@@ -132,9 +135,6 @@ footer {
 #search-form {
   width: 100%;
   margin-bottom: 20px;
-}
-.location-and-date span {
-  font-size: 1.3rem;
 }
 
 .submit-button {
