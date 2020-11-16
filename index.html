@@ -13,25 +13,22 @@
     <div class="container">
         <div class="weather-app-wrapper">
             <div class="weather-app">
-
                 <form id="search-form">
                     <div class="row">
                         <div class="col-9">
                             <input type="search" placeholder="Type city here.." class="form-control" id="city-input">
+                            <p id="current-location"><a href="#">Current Location</a></p>
                         </div>
                         <div class="col-3 submit-button">
                             <input type="submit" value="Search" class="btn btn-light">
                         </div>
                     </div>
                 </form>
-
                 <div class="location-and-date">
                     <h1></h1>
                     <p><em>Last updated <span id="current-date"></span></em></p>
                     <p>
-                </div>
-
-                
+                </div>                
                 <div class="current-weather">
                     <div class="current-weather-icon-container">
                         <img src="" id="current-weather-icon" alt="">
@@ -41,8 +38,6 @@
                         <div class="current-weather-description"></div>
                     </div>
                 </div>
-
-
                 <div class="current-weather-stats">
                     <div class="Cloudiness">
                         <div class="label">
@@ -76,13 +71,11 @@
                     </div>
                 </div>
             </div>
-            
             <footer>
                 <small>
                     <a href="https://github.com/amy-creasy/responsive-weather-app" target="_blank">Open-source code</a> by Amy Creasy
                 </small>  
             </footer>
-            
         </div>
     </div>
     <script src="src/index.js"></script>

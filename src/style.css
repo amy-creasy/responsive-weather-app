@@ -34,15 +34,25 @@ footer {
 @media screen and (min-width: 1140px) {
   .weather-app {
     max-width: 800px;
-    font-size: 1.1em;
+    font-size: 20px;
   }
 }
+
 .location-and-date {
   width: 100%;
   font-size: 14px;
 }
 
-/* Current Weather Section */
+#current-location {
+  font-size: 10px;
+  margin-bottom: 0;
+}
+#current-location a {
+  font-size: 10px;
+  margin-bottom: 0;
+  text-decoration: underline;
+  color: #fff;
+}
 
 .current-weather {
   display: flex;
@@ -93,8 +103,6 @@ footer {
   margin-left: 10px;
   text-transform: capitalize;
 }
-
-/*Current Weather Stats*/
 
 .current-weather-stats {
   display: flex;

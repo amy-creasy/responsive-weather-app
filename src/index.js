@@ -1,4 +1,5 @@
-//Day and Time//
+//Last Updated Date//
+
 function formatDate(timestamp) {
 let date = new Date(timestamp);
 
@@ -15,13 +16,7 @@ return `${currentHour}:${currentMinutes}`
 
 }
 
-
-//Current Weather//
-
-function convertToCelsius(event) {
-    event.preventDefault();
-
-}
+//Updates Current Weather and Weather Stats//
 
 function displayCurrentWeather (response) {
     document.querySelector("h1").innerHTML = response.data.name;
@@ -40,6 +35,7 @@ function displayCurrentWeather (response) {
     dateElement.innerHTML = formatDate(response.data.dt*1000);
 }
 
+//Search Engine and API//
 
 function search (city) {
     let apiKey = "fa4c25ecf74bb9185db3d2b06a17953e";
@@ -53,6 +49,8 @@ function handleSubmit (event) {
     let cityInputElement = document.querySelector("#city-input");
     search(cityInputElement.value);
 }
+
+//Unit Conversion//
 
 function convertToFahrenheit (event) {
     event.preventDefault();
@@ -75,6 +73,25 @@ function convertToCelsius (event) {
     temperatureElement.innerHTML = celsiusTemperature;
 }
 
+//Gets API for Current Location//
+
+function retrievePosition(position) {
+
+  let apiKey = "fa4c25ecf74bb9185db3d2b06a17953e";
+  let lat = position.coords.latitude;
+  let lon = position.coords.longitude;
+  let units = "metric"
+  let endPoint = "https://api.openweathermap.org/data/2.5/weather?"
+  let apiUrl = `${endPoint}lat=${lat}&lon=${lon}&units=${units}&appid=${apiKey}`;
+  axios.get(apiUrl).then(displayCurrentWeather);
+}
+
+function getLocation(event) {
+
+event.preventDefault();
+navigator.geolocation.getCurrentPosition(retrievePosition);
+}
+
 let celsiusTemperature = null;
 
 let form = document.querySelector("#search-form");
@@ -85,5 +102,8 @@ celsiusLink.addEventListener("click", convertToCelsius);
 
 let fahrenheitLink = document.querySelector("#fahrenheit-link");
 fahrenheitLink.addEventListener("click", convertToFahrenheit);
+
+let currentLocationLink = document.querySelector("#current-location");
+currentLocationLink.addEventListener("click", getLocation);
 
 search("London");
